@@ -21,37 +21,56 @@
 
     <form action="#" novalidate>
 
-      <div class="user-input">
-        <label for="bill">Bill</label> <br>
-        <input type="number" id="bill" placeholder="$">
-      </div>
-
-      <div class="tip-percentage">
-        <span>Select Tip %</span>
-
-        <div>
-          <span>5%</span>
-          <span>10%</span>
-          <span>15%</span>
-          <span>25%</span>
-          <span>50%</span>
-          <span> Custom</span>
-        </div>
+      <div class="input-wrapper">
         
-      </div>
+        <div class="user-input">
+          <div>
+            <label for="bill">Bill</label> 
+            <span class="error1">Can't be zero</span>
+          </div>
+          
+          <input type="number" id="bill" placeholder="0" name="bill">
+        </div>
+  
+        <div class="tip-percentage">
+          <span>Select Tip %</span>
+  
+          <div class="buttons">
+            <span role="button" id="5">5%</span>
+            <span role="button" id="10">10%</span>
+            <span role="button" id="15">15%</span>
+            <span role="button" id="25">25%</span>
+            <span role="button" id="50">50%</span>
+            <span role="button" id="custom"> Custom</span>
+          </div>
+          
+        </div>
+  
+        <div class="person">
+          <div>
+            <label for="diners">Number of People</label> 
+            <span class="error2">Can't be zero</span>
+          </div>
+          
+          <input type="number" name="diners" placeholder="0" id="diners">
+          
+        </div>
 
-      <div class="person">
-        Number of People
       </div>
 
       <div class="output">
-        Tip Amount
-        / person
-      
-        Total
-        / person
-      
-        Reset        
+        
+        <div class="tip">
+          <p>Tip Amount <br><span>/ person</span></p>
+          <p>$0.00</p>
+        </div>
+
+        <div class="total">
+          <p>Total <br><span>/ person</span></p>
+          <p>$0.00</p>
+        </div>        
+        
+        <span role="button" id="reset">Reset</span>
       </div>
 
     </form>
