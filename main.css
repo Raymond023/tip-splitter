@@ -172,6 +172,9 @@ input:focus{
     text-transform: uppercase;
     width: 100%;
 }
+#reset.clear{
+    background-color: var(--strongCyan);
+}
 
 /* media queries */
 @media screen and (min-width:920px) {
@@ -191,6 +194,7 @@ input:focus{
         justify-self: center;
         width: 95%;
     }
+    
     .output{
         margin: 0;
         padding-bottom: 40px;
@@ -202,6 +206,11 @@ input:focus{
     }
     #reset:hover, .buttons > span:hover{
         background-color: var(--lightGrayishCyan);
+        color: var(--veryDarkCyan);
+        cursor: pointer;
+    }
+    .buttons span.active{
+        background-color: var(--strongCyan);
         color: var(--veryDarkCyan);
     }
 }
