@@ -134,6 +134,10 @@ input:focus{
     color: var(--darkGrayishCyan);
     font-weight: 600;
 }
+.buttons span.active{
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+}
 /* output styles */
 .output{
     background-color: var(--veryDarkCyan);
@@ -208,9 +212,5 @@ input:focus{
         background-color: var(--lightGrayishCyan);
         color: var(--veryDarkCyan);
         cursor: pointer;
-    }
-    .buttons span.active{
-        background-color: var(--strongCyan);
-        color: var(--veryDarkCyan);
     }
 }
